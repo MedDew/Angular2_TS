@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <script src="../../dist/out-tsc/e2e/src/app.component.js"></script>
+    </head>
+    <body>
+        <div>
+            <h1>Welcome to {{title}}</h1>
+        </div>
+        <button (click)="toggle()">
+            Toggle
+        </button>
+        <div *ngIf="isEnable">
+            <div *ngFor="let name of names">
+                <h2>Hey {{name}}</h2>    
+            </div>
+        </div>
+    </body>
+</html>
